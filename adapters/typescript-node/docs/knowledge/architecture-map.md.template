@@ -1,0 +1,35 @@
+# Architecture Map
+
+Last verified against implementation commit `[commit]`.
+
+## Purpose
+
+Describe the current technical boundaries for the next contributor. This is a
+map of verified facts, not a future architecture proposal.
+
+## Runtime And Entry Points
+
+- Runtime: `[Node/browser/edge/etc.]`
+- Primary entry point: `[path]`
+- Module boundary: `[path and responsibility]`
+
+## Request Or Event Flow
+
+```text
+[user/event] -> [handler] -> [service] -> [external boundary] -> [result]
+```
+
+## State, Data And Side Effects
+
+- Persistent state: `[facts]`
+- External APIs/queues/storage: `[facts]`
+- Authoritative validation: `[facts]`
+- Idempotency/retry boundary: `[facts]`
+
+## Invariants
+
+- `[code-backed invariant and location]`
+
+## Known Boundaries
+
+- `[what this map does not prove or own]`

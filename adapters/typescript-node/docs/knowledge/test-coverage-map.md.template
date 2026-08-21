@@ -1,0 +1,20 @@
+# Test Coverage Map
+
+Last verified against test implementation commit `[commit]`.
+
+## Test Ownership
+
+| Concern | Tests | What They Prove | What They Do Not Prove |
+| --- | --- | --- | --- |
+| Domain rules | `[paths]` | `[facts]` | `[limits]` |
+| API/integration | `[paths]` | `[facts]` | `[limits]` |
+| UI/end-to-end | `[paths]` | `[facts]` | `[limits]` |
+
+## CI Gates
+
+| Gate | Command/workflow | Trigger | Notes |
+| --- | --- | --- | --- |
+| Typecheck | `[command]` | `[trigger]` | `[facts]` |
+| Unit | `[command]` | `[trigger]` | `[facts]` |
+| Integration | `[command]` | `[trigger]` | `[facts]` |
+| Build | `[command]` | `[trigger]` | `[facts]` |

@@ -1,0 +1,14 @@
+# Engineering Skills
+
+Skills describe reusable procedures for this project. They are not a catalogue
+of every feature design.
+
+## Skills
+
+| Skill | When To Use It | Evidence Or Playbook Origin |
+| --- | --- | --- |
+| `[file]` | `[recurring situation]` | `[validated change or playbook tag]` |
+
+New project-specific Skills require evidence that the procedure was useful
+more than once. A reviewed starter Skill from a selected adapter may be adopted
+at bootstrap and should retain its playbook version as its origin.

@@ -1,0 +1,23 @@
+# Process Baseline
+
+## Adoption
+
+- Playbook version: `[tag or commit]`
+- Adapter: `[adapter name; uses the playbook version above]`
+- Target baseline commit: `[commit]`
+- Bootstrap PR: `[link]`
+- Approved by: `[reviewer]`
+- Date: `[YYYY-MM-DD]`
+
+## Local Adaptations
+
+- Package manager/build commands: `[facts]`
+- Test and CI gates: `[facts]`
+- Release/deployment process: `[facts]`
+- Architecture-specific rules: `[facts]`
+- Files intentionally not adopted: `[facts]`
+
+## Upgrade History
+
+| Date | From | To | Reason | PR |
+| --- | --- | --- | --- | --- |
