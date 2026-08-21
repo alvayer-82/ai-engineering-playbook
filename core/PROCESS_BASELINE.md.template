@@ -3,7 +3,7 @@
 ## Adoption
 
 - Playbook version: `[tag or commit]`
-- Adapter: `[adapter name and version]`
+- Adapter: `[adapter name; uses the playbook version above]`
 - Target baseline commit: `[commit]`
 - Bootstrap PR: `[link]`
 - Approved by: `[reviewer]`

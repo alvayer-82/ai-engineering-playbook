@@ -25,8 +25,10 @@ CI configuration, test suites and deployment/release path.
    pretending to describe the project.
 4. Create initial Knowledge Base maps for the architectural boundaries that
    future changes need to understand.
-5. Create stack-specific Skills only for recurring procedures. Do not turn a
-   single feature's design into a reusable Skill.
+5. Create project-specific Skills only for recurring procedures. Do not turn a
+   single feature's design into a reusable Skill. A starter Skill supplied by
+   an adapter may be copied when its documented cross-project procedure applies;
+   record it as inherited from the selected playbook version.
 6. Record the adoption in `PROCESS_BASELINE.md`.
 7. Open a documentation-only bootstrap Pull Request and obtain independent
    review before relying on the new process.
@@ -40,6 +42,8 @@ CI configuration, test suites and deployment/release path.
 - Are architecture and technical-debt statements code-backed rather than
   copied from the playbook?
 - Does the adapter match the project's runtime and package manager?
+- Have all bracketed placeholders such as `[path]`, `[facts]` and `[commit]`
+  been replaced or deliberately removed from adopted documents?
 
 ## After Adoption
 

@@ -22,6 +22,10 @@ The bootstrap agent must inspect:
 - `tsconfig*.json`, lint/format configuration and generated-code rules;
 - test configuration and test directories;
 - CI workflows and environment-variable handling;
+- `.gitignore` and environment-file hygiene without reading or exposing secret
+  values; record whether a safe example/configuration guide is appropriate;
+- the package manager's available dependency-audit command and whether CI uses
+  it;
 - application entry points, module boundaries and API contracts;
 - schema/migration tooling, if a database exists;
 - deployment/runtime configuration.
@@ -51,6 +55,11 @@ Record only layers that actually exist:
   and late responses where the product needs that behavior?
 - Do package-lock changes correspond to a conscious dependency decision?
 
+If bootstrap discovery finds a real secret-handling or dependency-audit gap,
+record it in the target project's production-readiness backlog with the
+observed evidence. Do not seed a debt item merely because the adapter mentions
+the check.
+
 ## Initial Knowledge Base Maps
 
 Use the included starter files only after replacing placeholders with verified
@@ -60,3 +69,6 @@ or purpose.
 - [`docs/knowledge/architecture-map.md.template`](docs/knowledge/architecture-map.md.template)
 - [`docs/knowledge/test-coverage-map.md.template`](docs/knowledge/test-coverage-map.md.template)
 - [`docs/skills/typescript-change-review.md.template`](docs/skills/typescript-change-review.md.template)
+
+The core also supplies index templates for `docs/knowledge/README.md` and
+`docs/skills/README.md`.

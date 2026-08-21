@@ -32,6 +32,10 @@ TypeScript/Node.js project, then follow
 and use its
 [`BOOTSTRAP_PROMPT.md`](adapters/typescript-node/BOOTSTRAP_PROMPT.md).
 
+For a project that already adopted an earlier version, follow
+[`core/UPGRADE_GUIDE.md`](core/UPGRADE_GUIDE.md) instead of repeating
+bootstrap.
+
 ## What To Copy
 
 Copy the core process files and exactly one stack adapter. The target project
@@ -50,8 +54,11 @@ core/                         Technology-neutral workflow and templates
   PROCESS_BASELINE.md.template
   PRODUCTION_READINESS_BACKLOG.md.template
   docs/README.md.template     Documentation entry point
+  docs/knowledge/README.md.template
+  docs/skills/README.md.template
   .github/pull_request_template.md
   ADOPTION_GUIDE.md
+  UPGRADE_GUIDE.md
 
 adapters/
   typescript-node/            TypeScript/Node.js conventions and templates

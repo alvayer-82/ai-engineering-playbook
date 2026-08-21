@@ -1,0 +1,16 @@
+# Knowledge Base
+
+Last reviewed against project baseline `[commit]`.
+
+This directory contains maintained maps of verified technical behavior. It is
+not a substitute for inspecting current code and tests.
+
+## Maps
+
+| Map | Purpose | Last verified implementation/test commit |
+| --- | --- | --- |
+| `[file]` | `[technical boundary]` | `[commit]` |
+
+Add a map only when it gives a future contributor useful navigation across a
+technical boundary. Update the relevant map in the same Pull Request as a
+behavior or test-boundary change.

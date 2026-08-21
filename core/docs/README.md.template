@@ -31,7 +31,9 @@ For engineering work:
 
 - Knowledge Base maps change with shipped behavior and tests.
 - Design documents change with decisions and delivery status.
-- Skills change only after a reusable procedure is demonstrated.
+- New project-specific Skills change only after a reusable procedure is
+  demonstrated. Starter Skills from an adapter may be adopted when their
+  cross-project procedure applies and their playbook origin is recorded.
 - Acceptance documents record only executed manual evidence.
 - Live project status changes at milestone closeout; historical snapshots stay
   historical.

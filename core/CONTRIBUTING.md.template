@@ -29,7 +29,7 @@ unaffected.
 | Changed implemented behavior | Relevant Knowledge Base map | Same PR as code |
 | Changed test ownership/boundary | Test coverage map | Same PR as tests |
 | Architecture decision | Reviewed design document | Before implementation; status after delivery |
-| Reusable engineering procedure | Relevant Skill | After reuse is demonstrated |
+| New project-specific engineering procedure | Relevant Skill | After reuse is demonstrated; adapter starter Skills may be adopted when applicable and their playbook origin is recorded |
 | Deferred risk | Production-readiness backlog | PR deciding the deferral |
 | Executed manual evidence | Acceptance document | After actual execution |
 | Current project status | Live README/roadmap | Milestone closeout |
