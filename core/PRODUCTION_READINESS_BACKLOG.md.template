@@ -1,0 +1,26 @@
+# Production Readiness Backlog
+
+This is a living list of work outside an accepted feature or phase. It does
+not mean an accepted feature is incomplete.
+
+## Maintenance Rule
+
+Review this backlog at feature milestones and before releases. Add an item when
+a risk is consciously deferred; mark it done only with linked evidence.
+
+## Delivery And Governance
+
+| ID | Priority | Status | Task | Done When |
+| --- | --- | --- | --- | --- |
+| PROD-001 | P0 | TODO | Protect `main` with required review and CI checks. | Branch rules prevent bypass and a test PR proves the policy. |
+| PROD-002 | P0 | TODO | Define artifact, rollback and release policy. | A documented checklist is used for one release. |
+
+## Architecture And Maintainability Debt
+
+| ID | Priority | Status | Task | Done When |
+| --- | --- | --- | --- | --- |
+
+## Completed Evidence
+
+| ID | Date | Evidence |
+| --- | --- | --- |

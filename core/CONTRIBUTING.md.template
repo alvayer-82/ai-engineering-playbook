@@ -1,0 +1,65 @@
+# Contributing
+
+This document defines the delivery workflow for human and AI contributors. It
+does not define a feature's product architecture.
+
+## Baseline And Branch
+
+1. Start from the latest approved base branch, normally `main`.
+2. Inspect the working tree; do not include unrelated files.
+3. Follow `docs/README.md` and inspect code/tests before changing anything.
+4. Create a dedicated branch. Never implement a feature directly on `main`.
+
+## Architecture And Implementation
+
+- For complex changes, obtain architecture approval before implementation.
+- Keep changes within approved scope and use reviewable commits.
+- Add tests with the behavior they protect.
+- Run the project-specific focused and full verification gates before opening a
+  Pull Request.
+
+## Documentation Impact Gate
+
+Every Pull Request must evaluate these categories. Update each affected
+document in the same Pull Request or provide a code-backed reason it is
+unaffected.
+
+| Change | Canonical location | Update point |
+| --- | --- | --- |
+| Changed implemented behavior | Relevant Knowledge Base map | Same PR as code |
+| Changed test ownership/boundary | Test coverage map | Same PR as tests |
+| Architecture decision | Reviewed design document | Before implementation; status after delivery |
+| Reusable engineering procedure | Relevant Skill | After reuse is demonstrated |
+| Deferred risk | Production-readiness backlog | PR deciding the deferral |
+| Executed manual evidence | Acceptance document | After actual execution |
+| Current project status | Live README/roadmap | Milestone closeout |
+| Released behavior | Release notes | Before release tag |
+
+Do not update documents mechanically. Knowledge Base maps contain technical
+facts; Skills contain reusable methods; designs contain decisions; acceptance
+records contain executed evidence. Keep explicitly dated release snapshots
+historical.
+
+## Pull Requests
+
+Each Pull Request description includes:
+
+- objective and scope;
+- requirement-to-change and requirement-to-test traceability;
+- exact local verification results;
+- known limitations and deferred work;
+- a completed Documentation Impact section;
+- dependency information for a stacked PR.
+
+Stop for independent review. Do not self-merge unless project ownership has
+explicitly changed this policy.
+
+## Merge And Release Gates
+
+A Pull Request may merge only when review approves it, required CI is green on
+its exact head, no Blocker/Major remains, and required documentation is current.
+
+After merge, confirm CI on the resulting `main` commit. For a milestone or
+release, execute required manual acceptance, record only observed results,
+perform documentation closeout, and then create a tag from the green accepted
+commit.

@@ -1,0 +1,27 @@
+# TypeScript Change Review Skill
+
+Use this procedure for TypeScript changes that affect API boundaries,
+asynchronous state, persistence, package dependencies, generated types or
+deployment configuration.
+
+## Read First
+
+- Relevant Knowledge Base maps.
+- `package.json`, lockfile and the exact scripts used by CI.
+- The affected runtime entry point and tests.
+
+## Review Questions
+
+1. Does TypeScript typing match runtime validation at external boundaries?
+2. Does each async side effect define what happens after timeout, cancellation
+   or a late response?
+3. Are schema/API/versioning changes backward-compatible or explicitly
+   migrated?
+4. Did dependency and lockfile changes receive a conscious review?
+5. Do the chosen tests prove the stated behavior at the necessary boundary?
+
+## Output
+
+Report findings by severity, distinguish code-backed facts from assumptions,
+and list test coverage limits. Update this Skill only after the procedure has
+been useful in more than one target-project change.

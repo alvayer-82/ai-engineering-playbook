@@ -1,0 +1,37 @@
+# Project Documentation
+
+This page is the single documentation entry point. Replace every route below
+with local files that exist in the target repository.
+
+## Start Here
+
+For engineering work:
+
+1. Read the source requirement or issue.
+2. Read the approved design and acceptance document, if they exist.
+3. Read relevant Knowledge Base maps.
+4. Apply the relevant Skill.
+5. Inspect current code and tests.
+6. Follow `CONTRIBUTING.md`.
+
+## Documentation Map
+
+| Question | Local canonical location |
+| --- | --- |
+| Product requirements and roadmap | `[path]` |
+| Current technical behavior | `docs/knowledge/README.md` |
+| Reusable engineering procedures | `docs/skills/README.md` |
+| Architecture decisions | `[design document convention]` |
+| Manual acceptance | `[acceptance document convention]` |
+| Delivery workflow | `CONTRIBUTING.md` |
+| Deferred risks | `PRODUCTION_READINESS_BACKLOG.md` |
+| Release history | `[release notes path]` |
+
+## Documentation Lifecycle
+
+- Knowledge Base maps change with shipped behavior and tests.
+- Design documents change with decisions and delivery status.
+- Skills change only after a reusable procedure is demonstrated.
+- Acceptance documents record only executed manual evidence.
+- Live project status changes at milestone closeout; historical snapshots stay
+  historical.

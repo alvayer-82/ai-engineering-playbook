@@ -1,0 +1,40 @@
+# Project Agent Instructions
+
+These instructions apply to the whole repository.
+
+## Required Reading
+
+Before planning or changing a feature:
+
+1. Start at `docs/README.md` and follow the route for the task.
+2. Read `CONTRIBUTING.md` for delivery and review rules.
+3. Read the source requirement, approved design/acceptance documents, relevant
+   Knowledge Base maps and relevant Skills.
+4. Inspect actual call sites and tests. Documentation provides context; it is
+   not proof that the code still behaves as described.
+
+## Before Implementation
+
+- Obtain architecture approval when the task changes cross-layer behavior,
+  data integrity, concurrency, security, public contracts or user workflows.
+- Produce a short preflight mapping requirements to affected code, preserved
+  invariants, failure paths and planned tests.
+- Label conclusions as code-backed facts, requirements or recommendations.
+- Do not silently redesign an accepted earlier mechanism.
+
+## Review And Debugging Gates
+
+- After a Blocker or Major fix, re-check the full requirement, affected path,
+  failure outcomes, tests and documentation.
+- Before a Pull Request, provide requirement-to-test traceability, exact
+  verification results, changed-file scope and known limitations.
+- Complete every category of the Documentation Impact Gate in
+  `CONTRIBUTING.md`.
+- After two unsupported hypotheses or 30 minutes without materially narrowing
+  a defect, stop patching. Record the symptom, facts, rejected hypotheses,
+  smallest reproduction and next discriminating experiment.
+
+## Local Project Rules
+
+Replace this section during adoption with the target's verified architecture
+invariants, test commands, framework-specific rules and protected files.
